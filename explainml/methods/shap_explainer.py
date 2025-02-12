@@ -5,7 +5,7 @@ import shap
 from typing import Any, Dict, Union, Optional
 import numpy as np
 import pandas as pd
-from ..core.base import BaseExplainer
+from explainml.core.base import BaseExplainer
 
 class ShapExplainer(BaseExplainer):
     """SHAP-based model explainer."""
