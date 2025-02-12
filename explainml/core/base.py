@@ -63,7 +63,6 @@ class BaseExplainer(ABC):
         if self.framework not in self.SUPPORTED_FRAMEWORKS:
             raise ValueError(f"Framework '{self.framework}' is not supported.")
 
-        # Ensure the model has a predict method for explainability
         if not hasattr(self.model, "predict"):
             raise AttributeError(f"The provided model does not have a 'predict' method.")
 
