@@ -1,5 +1,3 @@
-# explainml/core/deep_learning.py
-
 from typing import Any, Dict, List, Optional, Union, Tuple
 import numpy as np
 import torch
@@ -116,7 +114,7 @@ class DeepLearningExplainer(BaseExplainer):
             if not isinstance(X, torch.Tensor):
                 raise ValueError("Input must be numpy array or PyTorch tensor")
             return X.to(self.device)
-        else:  # tensorflow
+        else:  # TensorFlow
             if isinstance(X, np.ndarray):
                 X = tf.convert_to_tensor(X)
             if not isinstance(X, tf.Tensor):
