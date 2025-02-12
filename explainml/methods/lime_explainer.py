@@ -115,7 +115,7 @@ class LimeExplainer(BaseExplainer):
         importance_dict = {}
 
         for exp in explanations:
-            for feature_index, importance in exp.local_exp[1]:  # Class 1 feature importance
+            for feature_index, importance in exp.local_exp[1]:  
                 feature_name = self.feature_names[feature_index] if self.feature_names else f"Feature {feature_index}"
                 if feature_name not in importance_dict:
                     importance_dict[feature_name] = []
