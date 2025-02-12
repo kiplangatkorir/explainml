@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 import lime
 import lime.lime_tabular
 from typing import Any, Dict, List, Optional, Union
