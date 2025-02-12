@@ -34,7 +34,7 @@ class LimeExplainer(BaseExplainer):
         self.feature_names = feature_names
         self.class_names = class_names
         self.explainer = None
-        self.is_fitted = False  # Prevents redundant fitting
+        self.is_fitted = False  
 
     def fit(self, X: Union[np.ndarray, pd.DataFrame]) -> None:
         """
