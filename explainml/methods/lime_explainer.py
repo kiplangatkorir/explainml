@@ -6,7 +6,7 @@ import lime.lime_tabular
 from typing import Any, Dict, List, Optional, Union
 import numpy as np
 import pandas as pd
-from ..core.base import BaseExplainer
+from explainml.core.base import BaseExplainer
 
 class LimeExplainer(BaseExplainer):
     """
