@@ -1,19 +1,128 @@
-pandas
+# requirements/base.txt
+
+# Core dependencies
 numpy
+pandas
 scikit-learn
-matplotlib
-tensorflow
 scipy
 joblib
+
+# Deep Learning Frameworks
 torch
+tensorflow
+
+# Explanation Methods
 shap
 lime
 alibi
 captum
+
+# Visualization
 matplotlib
 seaborn
 plotly
 dash
 ipywidgets
+
+# Utilities
 tqdm
 pyyaml
+typing-extensions
+
+# requirements/dev.txt
+# Import base requirements
+-r base.txt
+
+# Testing
+pytest
+pytest-cov
+pytest-mock
+pytest-xdist
+coverage
+
+# Linting and Formatting
+black
+flake8
+isort
+mypy
+pylint
+bandit
+
+# Type Checking
+types-PyYAML
+types-setuptools
+types-requests
+
+# Documentation
+Sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+sphinx-copybutton
+nbsphinx
+ipython
+
+# Build tools
+build
+twine
+wheel
+
+# Pre-commit hooks
+pre-commit
+
+# requirements/docs.txt
+# Import base requirements
+-r base.txt
+
+# Documentation generation
+Sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+sphinx-copybutton
+sphinx-gallery
+nbsphinx
+jupyter
+ipython
+pandoc
+
+# Example notebooks
+notebook
+jupyterlab
+ipywidgets
+
+# requirements/optional.txt
+# Optional dependencies for extended functionality
+
+# Deep Learning Extensions
+tensorboard
+torch-vision
+tensorflow-probability
+
+# Advanced Visualization
+bokeh
+altair
+holoviews
+
+# Additional Explainers
+eli5
+interpret
+interpret-core
+
+# Performance Optimization
+numba
+dask
+vaex
+
+# requirements/tests.txt
+# Import dev requirements
+-r dev.txt
+
+# Additional testing tools
+pytest-benchmark
+pytest-timeout
+pytest-randomly
+pytest-sugar
+pytest-clarity
+hypothesis
+
+# Mock data generation
+faker
