@@ -256,7 +256,6 @@ class DeepLearningExplainer(BaseExplainer):
         importance_scores = {}
 
         if method == "activation":
-            # Run forward pass and collect activations
             if self.framework == 'pytorch':
                 with torch.no_grad():
                     _ = self.model(X)
