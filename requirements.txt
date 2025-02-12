@@ -13,3 +13,4 @@ captum
 matplotlib
 seaborn
 plotly
+dash
