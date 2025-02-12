@@ -6,3 +6,4 @@ tensorflow
 scipy
 joblib
 torch
+shap
