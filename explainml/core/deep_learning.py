@@ -267,7 +267,6 @@ class DeepLearningExplainer(BaseExplainer):
                     importance_scores[name] = float(tf.abs(activation).mean())
 
         elif method == "gradient":
-            # Compute gradient-based importance
             if self.framework == 'pytorch':
                 for name in self.layer_names:
                     grad = self._compute_layer_gradient_pytorch(X, name)
