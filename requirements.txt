@@ -10,3 +10,5 @@ shap
 lime
 alibi
 captum
+matplotlib
+seaborn
