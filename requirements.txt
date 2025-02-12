@@ -123,6 +123,4 @@ pytest-randomly
 pytest-sugar
 pytest-clarity
 hypothesis
-
-# Mock data generation
 faker
