@@ -12,3 +12,4 @@ alibi
 captum
 matplotlib
 seaborn
+plotly
