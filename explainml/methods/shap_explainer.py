@@ -1,5 +1,5 @@
 import shap
-from typing import Any, Dict, Union
+from typing import Any, Dict, Union, Optional
 import numpy as np
 import pandas as pd
 from ..core.base import BaseExplainer
