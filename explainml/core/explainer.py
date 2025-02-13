@@ -56,7 +56,6 @@ class ModelExplainer:
         """Initialize various explanation methods."""
         self.explainers = {}
         
-        # Initialize SHAP
         if self.background_data is not None:
             if self.framework == 'pytorch':
                 self.explainers['shap'] = shap.DeepExplainer(
