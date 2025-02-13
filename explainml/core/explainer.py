@@ -1,3 +1,6 @@
+import os
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
+import tensorflow as tf
 from typing import Any, Dict, List, Optional, Union, Tuple
 import numpy as np
 import pandas as pd
